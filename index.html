@@ -13,22 +13,24 @@
       }
       select[type="gender"]
       {
-        width:440px;
+        width:147%;
         height:32px;
       }
       select[type="month"]
       {
-        width:130px;
+        width:290%;
         height:32px;
       }
       input[type="day"]
       {
-        width:120px;
+        width:80%;
       }
       input[type="year"]
       {
-        width:130px;
+        width:94%;
       }
+      
+      
       a {text-decoration: none;}
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
       </style>                                             
@@ -40,59 +42,51 @@
       <div class="col1">
         <h1>One account is all you need</h1>
         <h2>One free accounts gets you into everything Google.</h2>
-        <br>
-        <p><img src="images/google1.PNG"  class="center"></p>
-        <br>
-        <br>
-        <br>
+        <h1>
+        <p><img src="images/google1.PNG"  class="center"></p></h1>
         <h1>Take it all with you</h1>
         <h2>Switch between devices, and pick up where you left off</h2>
-        <p><img src="images/google2.PNG"  class="center"></p>
+        <h1><p><img src="images/google2.PNG"  class="center"></p></h1>
       </div>
 
     <div class="col2">
     <div class="survey">
     <form id="myform" action="index.php" name="My survey">
+      <div class="nameinfo">
 
       <div class="two-col">
         <div class="col1">
             <label for="field1"><b>Name</b></label>
-            <br> 
-            <input type="text" name="firstname" placeholder = "First"><br>
+            <input type="text" name="firstname" placeholder = "First">
         </div>
 
         <div class="col2">
           <br>
-          <input type="text" name="lastname" placeholder = "Last" ><br>        
+          <input type="text" name="lastname" placeholder = "Last" >        
         </div>
     </div>
-      
-      <br>
-      <br>
-      <br>
-      <br>
+    </div>
+    
+    <div class="question">
       <b>Choose your username</b> 
-      <br>
-      <input type="username" name="username" placeholder = "@gmail.com" style="width: 430px">
-      <br>
+      <input type="username" name="username" placeholder = "@gmail.com" style="width: 98%">
       <a href="https://www.google.com/"> I prefer to use my current email address</a>
-      <br>
-      <br>
+      </div>
 
+      <div class="question">
       <b>Create a password</b> 
-      <br>
-      <input type="password" name="password" style="width: 430px">
-      <br>
-      <br>
+      <input type="password" name="password" style="width: 98%">
+    </div>
+
+    <div class="question">
       <b>Confirm your password</b> 
-      <br>
-      <input type="password" name="password" style="width: 430px">
-      <br>
-      <br>
+      <input type="password" name="password" style="width: 98%">
+    </div>
+    <div class="question">
       <b> Birthday </b>
       <div class="row">
         <div class="column">
-          <div class="month-select" style="width: 200px;">
+          <div class="month-select" style="width: 30%;">
           <select id="month" type="month">
             <option value="" disabled selected hidden>Month</option>
             <option value ="January">January</option>
@@ -112,18 +106,18 @@
         </div>
 
         <div class="column">
-          <input type="day" name="Day" placeholder = "Day" ><br>
+          <input type="day" name="Day" placeholder = "Day" >
         </div>
 
         <div class="column">
-          <input type="year" name="Year" placeholder = "Year"><br>
+          <input type="year" name="Year" placeholder = "Year">
         </div>
 
       </div>
-      <br>
-
-      <b>Gender:</b><br>
-      <div class="location-select" style="width:300px;">
+    </div>
+    <div class="question">
+      <b>Gender:</b>
+      <div class="location-select" style="width:68.5%;">
       <select id="gender" type="gender">
         <option value="" disabled selected hidden>I am...</option>
             <option value ="Male">Male</option>
@@ -131,20 +125,20 @@
             <option value ="Other">Other</option>
         </select>
       </div>
-        <br>
+    </div>
+    <div class="question"> 
       <b>Mobile Phone</b> 
-      <br>
-      <input type="password" name="password" style="width: 430px">
-      <br>
-      <br>
+      <input type="password" name="password" style="width: 98%">
+      </div>
+
+      <div class="question"> 
       <b>Your current email address</b> 
-      <br>
-      <input type="password" name="password" style="width: 430px">
-      <br>
-      <br>
+      <input type="password" name="password" style="width: 98%">
+      </div>
+  <div class="question">
       <b>Location</b>
-      <br>
-      <div class="location-select" style="width:300px;">
+    
+      <div class="location-select" style="width:68.5%;">
       <select id="location" type="gender">
         <option value="" disabled selected hidden>United Kingdom</option>
         <option value ="United Kingdom">United Kingdom</option>
@@ -153,15 +147,14 @@
         <option value ="United States of America">United States of America</option>
         </select>
      </div>
-     <br>
-     <br>
-   
+    </div>
+
+   <div class="question">
       <button id="submitButton" type="button" class="block">
         <h4>Next Step</h4>
       </button>
       <br>
-      <br>
-
+    </div>
 
     </form>
     </div>
